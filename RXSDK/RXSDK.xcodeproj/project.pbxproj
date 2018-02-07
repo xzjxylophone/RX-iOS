@@ -14,7 +14,7 @@
 		E8327F12202AF4B6000A62F3 /* UIImage+RXSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = E8327F10202AF4B6000A62F3 /* UIImage+RXSDK.m */; };
 		E8327F15202AF4C4000A62F3 /* RXSDKView.h in Headers */ = {isa = PBXBuildFile; fileRef = E8327F13202AF4C4000A62F3 /* RXSDKView.h */; };
 		E8327F16202AF4C4000A62F3 /* RXSDKView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8327F14202AF4C4000A62F3 /* RXSDKView.m */; };
-		E8327F19202AF63E000A62F3 /* RXSDKHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = E8327F17202AF63E000A62F3 /* RXSDKHeader.h */; };
+		E8327F19202AF63E000A62F3 /* RXSDKHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = E8327F17202AF63E000A62F3 /* RXSDKHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8327F1A202AF63E000A62F3 /* RXSDKHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = E8327F18202AF63E000A62F3 /* RXSDKHeader.m */; };
 /* End PBXBuildFile section */
 
@@ -366,8 +366,19 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = RXSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"RXCategory\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"UIKit\"",
+					_all_load,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.100tal.RXSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -388,8 +399,19 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = RXSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"RXCategory\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"UIKit\"",
+					_all_load,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.100tal.RXSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
