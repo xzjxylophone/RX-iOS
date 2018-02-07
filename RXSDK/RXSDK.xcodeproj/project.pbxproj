@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E162A0E75C9C6B6BD7756696 /* libPods-RXSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B928AF54DC4B9336A23EA24F /* libPods-RXSDK.a */; };
+		E8327EFB202AEC25000A62F3 /* RXSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = E8327EF9202AEC25000A62F3 /* RXSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8327F0A202AF386000A62F3 /* RXSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E8327F09202AF386000A62F3 /* RXSDK.bundle */; };
+		E8327F11202AF4B6000A62F3 /* UIImage+RXSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = E8327F0F202AF4B6000A62F3 /* UIImage+RXSDK.h */; };
+		E8327F12202AF4B6000A62F3 /* UIImage+RXSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = E8327F10202AF4B6000A62F3 /* UIImage+RXSDK.m */; };
+		E8327F15202AF4C4000A62F3 /* RXSDKView.h in Headers */ = {isa = PBXBuildFile; fileRef = E8327F13202AF4C4000A62F3 /* RXSDKView.h */; };
+		E8327F16202AF4C4000A62F3 /* RXSDKView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8327F14202AF4C4000A62F3 /* RXSDKView.m */; };
+		E8327F19202AF63E000A62F3 /* RXSDKHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = E8327F17202AF63E000A62F3 /* RXSDKHeader.h */; };
+		E8327F1A202AF63E000A62F3 /* RXSDKHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = E8327F18202AF63E000A62F3 /* RXSDKHeader.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		52812F8D0333AFF5E4D7130C /* Pods-RXSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RXSDK/Pods-RXSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		99EEB0453589808E762E45F8 /* Pods-RXSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-RXSDK/Pods-RXSDK.release.xcconfig"; sourceTree = "<group>"; };
+		B928AF54DC4B9336A23EA24F /* libPods-RXSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RXSDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8327EF6202AEC25000A62F3 /* RXSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RXSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8327EF9202AEC25000A62F3 /* RXSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RXSDK.h; sourceTree = "<group>"; };
+		E8327EFA202AEC25000A62F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8327F09202AF386000A62F3 /* RXSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RXSDK.bundle; sourceTree = "<group>"; };
+		E8327F0F202AF4B6000A62F3 /* UIImage+RXSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+RXSDK.h"; sourceTree = "<group>"; };
+		E8327F10202AF4B6000A62F3 /* UIImage+RXSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RXSDK.m"; sourceTree = "<group>"; };
+		E8327F13202AF4C4000A62F3 /* RXSDKView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RXSDKView.h; sourceTree = "<group>"; };
+		E8327F14202AF4C4000A62F3 /* RXSDKView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RXSDKView.m; sourceTree = "<group>"; };
+		E8327F17202AF63E000A62F3 /* RXSDKHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RXSDKHeader.h; sourceTree = "<group>"; };
+		E8327F18202AF63E000A62F3 /* RXSDKHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RXSDKHeader.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8327EF2202AEC25000A62F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E162A0E75C9C6B6BD7756696 /* libPods-RXSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF028FCFBF324A89F3763772 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B928AF54DC4B9336A23EA24F /* libPods-RXSDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8B3FAE496ED313B8FA08162 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52812F8D0333AFF5E4D7130C /* Pods-RXSDK.debug.xcconfig */,
+				99EEB0453589808E762E45F8 /* Pods-RXSDK.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E8327EEC202AEC25000A62F3 = {
+			isa = PBXGroup;
+			children = (
+				E8327EF8202AEC25000A62F3 /* RXSDK */,
+				E8327EF7202AEC25000A62F3 /* Products */,
+				B8B3FAE496ED313B8FA08162 /* Pods */,
+				AF028FCFBF324A89F3763772 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E8327EF7202AEC25000A62F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8327EF6202AEC25000A62F3 /* RXSDK.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8327EF8202AEC25000A62F3 /* RXSDK */ = {
+			isa = PBXGroup;
+			children = (
+				E8327F05202AF32C000A62F3 /* res */,
+				E8327F07202AF32C000A62F3 /* src */,
+				E8327EF9202AEC25000A62F3 /* RXSDK.h */,
+				E8327EFA202AEC25000A62F3 /* Info.plist */,
+			);
+			path = RXSDK;
+			sourceTree = "<group>";
+		};
+		E8327F05202AF32C000A62F3 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				E8327F09202AF386000A62F3 /* RXSDK.bundle */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		E8327F07202AF32C000A62F3 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E8327F0F202AF4B6000A62F3 /* UIImage+RXSDK.h */,
+				E8327F10202AF4B6000A62F3 /* UIImage+RXSDK.m */,
+				E8327F13202AF4C4000A62F3 /* RXSDKView.h */,
+				E8327F14202AF4C4000A62F3 /* RXSDKView.m */,
+				E8327F17202AF63E000A62F3 /* RXSDKHeader.h */,
+				E8327F18202AF63E000A62F3 /* RXSDKHeader.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E8327EF3202AEC25000A62F3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8327F19202AF63E000A62F3 /* RXSDKHeader.h in Headers */,
+				E8327F15202AF4C4000A62F3 /* RXSDKView.h in Headers */,
+				E8327EFB202AEC25000A62F3 /* RXSDK.h in Headers */,
+				E8327F11202AF4B6000A62F3 /* UIImage+RXSDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E8327EF5202AEC25000A62F3 /* RXSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8327EFE202AEC25000A62F3 /* Build configuration list for PBXNativeTarget "RXSDK" */;
+			buildPhases = (
+				FBB949517DB8A8DED6758456 /* [CP] Check Pods Manifest.lock */,
+				E8327EF1202AEC25000A62F3 /* Sources */,
+				E8327EF2202AEC25000A62F3 /* Frameworks */,
+				E8327EF3202AEC25000A62F3 /* Headers */,
+				E8327EF4202AEC25000A62F3 /* Resources */,
+				B5AC15BB0814BBE049D41F7C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RXSDK;
+			productName = RXSDK;
+			productReference = E8327EF6202AEC25000A62F3 /* RXSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8327EED202AEC25000A62F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = TAL;
+				TargetAttributes = {
+					E8327EF5202AEC25000A62F3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E8327EF0202AEC25000A62F3 /* Build configuration list for PBXProject "RXSDK" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E8327EEC202AEC25000A62F3;
+			productRefGroup = E8327EF7202AEC25000A62F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8327EF5202AEC25000A62F3 /* RXSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8327EF4202AEC25000A62F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8327F0A202AF386000A62F3 /* RXSDK.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B5AC15BB0814BBE049D41F7C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RXSDK/Pods-RXSDK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBB949517DB8A8DED6758456 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RXSDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8327EF1202AEC25000A62F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8327F1A202AF63E000A62F3 /* RXSDKHeader.m in Sources */,
+				E8327F12202AF4B6000A62F3 /* UIImage+RXSDK.m in Sources */,
+				E8327F16202AF4C4000A62F3 /* RXSDKView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E8327EFC202AEC25000A62F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E8327EFD202AEC25000A62F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E8327EFF202AEC25000A62F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52812F8D0333AFF5E4D7130C /* Pods-RXSDK.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = BMW986WME7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RXSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.100tal.RXSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8327F00202AEC25000A62F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99EEB0453589808E762E45F8 /* Pods-RXSDK.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = BMW986WME7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RXSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.100tal.RXSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8327EF0202AEC25000A62F3 /* Build configuration list for PBXProject "RXSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8327EFC202AEC25000A62F3 /* Debug */,
+				E8327EFD202AEC25000A62F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8327EFE202AEC25000A62F3 /* Build configuration list for PBXNativeTarget "RXSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8327EFF202AEC25000A62F3 /* Debug */,
+				E8327F00202AEC25000A62F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8327EED202AEC25000A62F3 /* Project object */;
+}
