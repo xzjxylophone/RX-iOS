@@ -6,6 +6,20 @@
 	objectVersion = 48;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		E8889000203E6B520019A86C /* RXSDKBuild */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E8889001203E6B520019A86C /* Build configuration list for PBXAggregateTarget "RXSDKBuild" */;
+			buildPhases = (
+				E8889004203E6DD60019A86C /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = RXSDKBuild;
+			productName = RXSDKBuild;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		E162A0E75C9C6B6BD7756696 /* libPods-RXSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B928AF54DC4B9336A23EA24F /* libPods-RXSDK.a */; };
 		E8327EFB202AEC25000A62F3 /* RXSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = E8327EF9202AEC25000A62F3 /* RXSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -163,6 +177,10 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
+					E8889000203E6B520019A86C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = E8327EF0202AEC25000A62F3 /* Build configuration list for PBXProject "RXSDK" */;
@@ -178,6 +196,7 @@
 			projectRoot = "";
 			targets = (
 				E8327EF5202AEC25000A62F3 /* RXSDK */,
+				E8889000203E6B520019A86C /* RXSDKBuild */,
 			);
 		};
 /* End PBXProject section */
@@ -208,6 +227,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RXSDK/Pods-RXSDK-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		E8889004203E6DD60019A86C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\n\necho \"run xcode script begin\"\nscript_file_name=sdkAggregate.sh\nscript_dir=${SRCROOT%/*}/BuildScript  #  坑爹啊 */\nscript_path=$script_dir/$script_file_name\n# 获取目录的相关权限\nchmod +x $script_dir\n# 获取文件的相关权限\nchmod 764 $script_path\n# 调用sh脚本文件\nsource $script_path\necho \"run xcode script end\"\n\n\n";
 		};
 		FBB949517DB8A8DED6758456 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -419,6 +451,24 @@
 			};
 			name = Release;
 		};
+		E8889002203E6B520019A86C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BMW986WME7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E8889003203E6B520019A86C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BMW986WME7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -436,6 +486,15 @@
 			buildConfigurations = (
 				E8327EFF202AEC25000A62F3 /* Debug */,
 				E8327F00202AEC25000A62F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8889001203E6B520019A86C /* Build configuration list for PBXAggregateTarget "RXSDKBuild" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8889002203E6B520019A86C /* Debug */,
+				E8889003203E6B520019A86C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
